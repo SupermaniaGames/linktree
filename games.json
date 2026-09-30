@@ -3,7 +3,7 @@
     {
       "name": "Supermania Ludo",
       "desc": "Ludo and Snakes & Ladders. Play with friends online, vs computer or pass N play.",
-      "url": "https://supermaniagames.github.io/REPLACE-WITH-LUDO-REPO-NAME/",
+      "url": "https://supermaniagames.github.io/ludo/",
       "logo": "logos/ludo.png",
       "tag": "Board"
     },
@@ -23,7 +23,8 @@
     },
     {
       "name": "Connect Four",
-      "desc": "Line up four to win.",
+      "desc": "Line up four to win.Play with friends online, vs computer or pass N play.",
+      "url": "https://supermaniagames.github.io/Connect-Four/",
       "logo": "logos/connect-four.png",
       "tag": "Brain",
       "soon": true
@@ -31,6 +32,7 @@
     {
       "name": "Sooper Ranga",
       "desc": "Run, jump and collect in a temple adventure.",
+      "url": "https://supermaniagames.github.io/Sooper-Ranga//",
       "logo": "logos/sooper-ranga.png",
       "tag": "Adventure",
       "soon": true
