@@ -14,7 +14,7 @@
       "logo": "logo-oakwood-chess.png",
       "tag": "Board"
     },
-     {
+    {
       "name": "Connect Four",
       "desc": "Line up four to win.",
       "url": "https://supermaniagames.github.io/Connect-Four/",
