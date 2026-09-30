@@ -1,0 +1,39 @@
+{
+  "games": [
+    {
+      "name": "Supermania Ludo",
+      "desc": "Ludo and Snakes & Ladders. Play with friends online, vs computer or pass N play.",
+      "url": "https://supermaniagames.github.io/REPLACE-WITH-LUDO-REPO-NAME/",
+      "logo": "logos/ludo.png",
+      "tag": "Board"
+    },
+    {
+      "name": "Oakwood Chess",
+      "desc": "A quiet board for you and a friend.",
+      "url": "https://supermaniagames.github.io/Oakwood-chess/",
+      "logo": "logos/oakwood-chess.png",
+      "tag": "Board"
+    },
+    {
+      "name": "Supermania Carrom",
+      "desc": "Flick, pocket and win.",
+      "logo": "logos/carrom.png",
+      "tag": "Board",
+      "soon": true
+    },
+    {
+      "name": "Connect Four",
+      "desc": "Line up four to win.",
+      "logo": "logos/connect-four.png",
+      "tag": "Brain",
+      "soon": true
+    },
+    {
+      "name": "Sooper Ranga",
+      "desc": "Run, jump and collect in a temple adventure.",
+      "logo": "logos/sooper-ranga.png",
+      "tag": "Adventure",
+      "soon": true
+    }
+  ]
+}
