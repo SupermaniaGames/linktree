@@ -24,9 +24,9 @@
     {
       "name": "Connect Four",
       "desc": "Line up four to win.",
+      "url": "https://supermaniagames.github.io/Connect-Four/",
       "logo": "logo-connect-four.png",
       "tag": "Brain",
-      "soon": true
     },
     {
       "name": "Sooper Ranga",
