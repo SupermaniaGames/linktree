@@ -3,7 +3,7 @@
     {
       "name": "Supermania Ludo",
       "desc": "Ludo and Snakes & Ladders. Play with friends online, vs computer or pass N play.",
-      "url": "https://supermaniagames.github.io/ludo/",
+      "url": "https://supermaniagames.github.io/Ludo/",
       "logo": "logos/ludo.png",
       "tag": "Board"
     },
@@ -27,7 +27,6 @@
       "url": "https://supermaniagames.github.io/Connect-Four/",
       "logo": "logos/connect-four.png",
       "tag": "Brain",
-      "soon": true
     },
     {
       "name": "Sooper Ranga",
