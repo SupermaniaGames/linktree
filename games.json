@@ -21,6 +21,13 @@
       "logo": "logo-connect-four.png",
       "tag": "Brain"
     },
+     {
+      "name": "Supermania Sudoku",
+      "desc": "Logic puzzle where you fill a 9×9 grid",
+      "url": "https://supermaniagames.github.io/Sudoku/",
+      "logo": "logo-sudoku.png",
+      "tag": "Brain"
+    },
     {
       "name": "Supermania Carrom",
       "desc": "Flick, pocket and win.",
