@@ -1,6 +1,6 @@
 const list=document.getElementById('list');
 
-fetch('games.json',{cache:'no-store'})
+fetch('games.json?t='+Date.now(),{cache:'no-store'})
   .then(r=>r.json())
   .then(d=>d.games.forEach(g=>list.append(card(g))))
   .catch(()=>{list.innerHTML='<li class="err">Could not load the games list. Check games.json.</li>'});
@@ -13,7 +13,7 @@ function card(g){
   if(link)a.href=g.url;
 
   const lg=document.createElement('span');lg.className='lg';
-  const img=document.createElement('img');img.alt='';img.src=g.logo||'';
+  const img=document.createElement('img');img.alt='';img.src=g.logo?g.logo+(g.logo.includes('?')?'&':'?')+'t='+Date.now():'';
   img.onerror=()=>{lg.textContent=(g.name||'?').trim()[0]||'?';lg.classList.add('ph')};
   if(g.logo)lg.append(img);else{lg.textContent=(g.name||'?')[0];lg.classList.add('ph')}
 
@@ -35,4 +35,11 @@ document.getElementById('share').onclick=async()=>{
   window.open('https://wa.me/?text='+encodeURIComponent(text+'\n'+url),'_blank');
 };
 
-if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js',{updateViaCache:'none'});
+if('serviceWorker' in navigator){
+  const had=!!navigator.serviceWorker.controller;let reloaded=false;
+  navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(r=>{
+    r.update();
+    document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')r.update()});
+  });
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{if(had&&!reloaded){reloaded=true;location.reload()}});
+}
