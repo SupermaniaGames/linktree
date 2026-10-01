@@ -1,5 +1,18 @@
 const list=document.getElementById('list');
 
+// Finds a logo wherever it was uploaded: next to index.html or in a common sub folder.
+const DIRS=['','logos/','images/','assets/','img/','icons/'];
+function loadLogo(img,name,onFail){
+  const bust=u=>u+(u.includes('?')?'&':'?')+'t='+Date.now();
+  const urls=/^https?:\/\//.test(name)?[name]:DIRS.map(d=>d+name);
+  let i=0;
+  img.onerror=()=>{i++;if(i<urls.length)img.src=bust(urls[i]);else onFail()};
+  img.src=bust(urls[0]);
+}
+document.querySelectorAll('img[data-logo]').forEach(img=>loadLogo(img,img.dataset.logo,()=>{
+  img.replaceWith(Object.assign(document.createElement('b'),{className:'fallback',textContent:img.dataset.fb}));
+}));
+
 fetch('games.json?t='+Date.now(),{cache:'no-store'})
   .then(r=>r.json())
   .then(d=>d.games.forEach(g=>list.append(card(g))))
@@ -13,9 +26,9 @@ function card(g){
   if(link)a.href=g.url;
 
   const lg=document.createElement('span');lg.className='lg';
-  const img=document.createElement('img');img.alt='';img.src=g.logo?g.logo+(g.logo.includes('?')?'&':'?')+'t='+Date.now():'';
-  img.onerror=()=>{lg.textContent=(g.name||'?').trim()[0]||'?';lg.classList.add('ph')};
-  if(g.logo)lg.append(img);else{lg.textContent=(g.name||'?')[0];lg.classList.add('ph')}
+  const img=document.createElement('img');img.alt='';
+  const ph=()=>{img.remove();lg.textContent=(g.name||'?').trim()[0]||'?';lg.classList.add('ph')};
+  if(g.logo){lg.append(img);loadLogo(img,g.logo,ph)}else ph();
 
   const tx=document.createElement('span');tx.className='tx';
   const nm=document.createElement('b');nm.textContent=g.name||'Game';
