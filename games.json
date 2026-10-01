@@ -39,8 +39,7 @@
       "name": "Sooper Ranga",
       "desc": "Run, jump and collect in a temple adventure.",
       "logo": "logo-sooper-ranga.png",
-      "tag": "Adventure",
-      "soon": true
+      "tag": "Adventure"
     }
   ]
 }
