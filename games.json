@@ -21,6 +21,13 @@
       "logo": "logo-connect-four.png",
       "tag": "Brain"
     },
+    {
+      "name": "Reversi/Othello",
+      "desc": "Players trap and flip each other’s discs to control the most squares",
+      "url": "https://supermaniagames.github.io/Reversi/",
+      "logo": "logo-reversi.png",
+      "tag": "Brain"
+    },
      {
       "name": "Supermania Sudoku",
       "desc": "Logic puzzle where you fill a 9×9 grid",
