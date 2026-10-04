@@ -21,6 +21,13 @@
       "logo": "logo-connect-four.png",
       "tag": "Brain"
     },
+      {
+      "name": "Mastermind",
+      "desc": "Code-breaking logic game",
+      "url": "https://supermaniagames.github.io/Mastermind/",
+      "logo": "logo-mastermind.png",
+      "tag": "Brain"
+    },
     {
       "name": "Reversi/Othello",
       "desc": "Players trap and flip each other’s discs to control the most squares",
@@ -35,6 +42,20 @@
       "logo": "logo-sudoku.png",
       "tag": "Brain"
     },
+     {
+      "name": "Supermania Kakuro",
+      "desc": "Crossword-style number puzzle",
+      "url": "https://supermaniagames.github.io/Kakuro/",
+      "logo": "logo-kakuro.png",
+      "tag": "Brain"
+    },
+      {
+      "name": "Sooper Ranga",
+      "desc": "Run, jump and collect in a temple adventure.",
+      "url": "https://supermaniagames.github.io/Sooper-Ranga/",
+      "logo": "logo-sooper-ranga.png",
+      "tag": "Adventure"
+    },
     {
       "name": "Supermania Carrom",
       "desc": "Flick, pocket and win.",
@@ -42,12 +63,5 @@
       "tag": "Board",
       "soon": true
     },
-    {
-      "name": "Sooper Ranga",
-      "desc": "Run, jump and collect in a temple adventure.",
-      "url": "https://supermaniagames.github.io/Sooper-Ranga/",
-      "logo": "logo-sooper-ranga.png",
-      "tag": "Adventure"
-    }
   ]
 }
