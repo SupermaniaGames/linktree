@@ -57,9 +57,9 @@
       "tag": "Adventure"
     },
     {
-      "name": "Supermania Carrom",
-      "desc": "Flick, pocket and win.",
-      "logo": "logo-carrom.png",
+      "name": "Ludo Realms Siege",
+      "desc": "A quiet board for you and a friend.",
+      "logo": "logo-siege.png",
       "tag": "Board",
       "soon": true
     }
