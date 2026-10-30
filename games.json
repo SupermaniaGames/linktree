@@ -59,9 +59,9 @@
     {
       "name": "Ludo Realms Siege",
       "desc": "A quiet board for you and a friend.",
+     "url": "https://supermaniagames.github.io/Ludo-Realms-Siege/",
       "logo": "logo-siege.png",
-      "tag": "Board",
-      "soon": true
+      "tag": "Board"
     }
   ]
 }
